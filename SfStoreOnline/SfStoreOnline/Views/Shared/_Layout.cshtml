@@ -1,0 +1,80 @@
+﻿
+@{
+    if (Session[SfStoreOnline.Models.CommonConstants.USER_SESSION] == null)
+    {
+        Html.Action("GetSession", "Home");
+    }
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--===============================================================================================-->
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("css", required: false)
+    @RenderSection("jsHeader", required: false)
+    <!--===============================================================================================-->
+</head>
+<body class="animsition">
+
+    <!-- Header -->
+    @Html.Action("Header", "Home")
+    @RenderBody()
+    <!-- Footer -->
+    @Html.Action("Footer", "Home")
+    <!-- Back to top -->
+    <div class="btn-back-to-top bg0-hov" id="myBtn">
+        <span class="symbol-btn-back-to-top">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+        </span>
+    </div>
+
+    <!--===============================================================================================-->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/layoutjs")
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    @RenderSection("scripts", required: false)
+    <!--===============================================================================================-->
+
+    <script type="text/javascript">
+
+        function AddCart(a, b, c) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("Addcart", "Cart")',
+                data: { Id: a, sl: c},
+                ajaxasync: true,
+                success: function (result) {
+                    $('#lstcard').html(result);
+                    @*$('#item_number').text(@TempData["total"]);
+                    $('#number-item-oder').text(@TempData["total"]);*@
+                        swal(b, "Đã thêm vào giỏ hàng !", "success");
+                }
+            });
+        };
+    </script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+<div id="id01" class="modal">
+    @Html.Action("ViewLogin", "Authentication")
+</div>
+
+</html>

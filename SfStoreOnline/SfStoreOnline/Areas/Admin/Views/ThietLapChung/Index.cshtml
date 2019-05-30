@@ -1,0 +1,350 @@
+﻿@model SfStoreOnline.Models.ThietLapChung
+
+@{
+    ViewBag.Title = "Thiết lập chung";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<section class="content">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.Date0)
+        @Html.HiddenFor(model => model.Time0)
+        @Html.HiddenFor(model => model.UserId0)
+        @Html.HiddenFor(model => model.Date2)
+        @Html.HiddenFor(model => model.Time2)
+        @Html.HiddenFor(model => model.UserId2)
+        @*@Html.HiddenFor(model => model.Logo)
+            @Html.HiddenFor(model => model.SliderAnh1)
+            @Html.HiddenFor(model => model.SliderAnh2)
+            @Html.HiddenFor(model => model.SliderAnh3)*@
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @* left *@
+            <div class="nav-tabs-custom">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#thongtinchung" data-toggle="tab" aria-expanded="true">Thông tin chung</a></li>
+                    <li class=""><a href="#slider" data-toggle="tab" aria-expanded="false">Thiết lập slider</a></li>
+                    <li class=""><a href="#danhmuc" data-toggle="tab" aria-expanded="false">Danh mục nổi bật</a></li>
+                    <li class=""><a href="#gioithieu" data-toggle="tab" aria-expanded="false">Giới thiệu</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="thongtinchung">
+                        <div class="box-body">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="control-label col-md-3">Logo</label>
+
+                                    <div class="col-md-4">
+                                        <span class="profile-picture-edit">
+                                            @if (Model == null || string.IsNullOrEmpty(Model.Logo))
+                                            {
+                                                <img id="logoimg" class="editable img-responsive editable-click editable-empty" src="~/Image/Layout/no-image.jpg" />
+                                            }
+                                            else
+                                            {
+                                                <img id="logoimg" class="editable img-responsive editable-click editable-empty" src="~/Image/ThietLapChung/Logo/@Model.Logo" />
+                                            }
+                                        </span>
+                                    </div>
+                                    <div class="col-md-5">@Html.TextBoxFor(model => model.Logo, new { type = "file", @class = "imagepath", accept = ".jpg, .jpeg, .gif, .png", onchange = "ShowPreview(this)" })</div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.TenCuaHang, htmlAttributes: new { @class = "control-label col-md-3 label-required" })
+                                    <div class="col-md-9">
+                                        @Html.EditorFor(model => model.TenCuaHang, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.TenCuaHang, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.DiaChi, htmlAttributes: new { @class = "control-label col-md-3 label-required" })
+                                    <div class="col-md-9">
+                                        @Html.TextAreaFor(model => model.DiaChi, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Sdt, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.EditorFor(model => model.Sdt, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Sdt, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    @* end thong tin chung *@
+                    <div class="tab-pane" id="slider">
+                        <div class="box-body">
+                            <p style="border-bottom:1px solid #ff0000; font-weight:bold;">Slider 1</p>
+                            <div class="form-group col-md-6">
+                                @Html.LabelFor(model => model.SliderAnh1, htmlAttributes: new { @class = "control-label col-md-3" })
+                                <div class="col-md-4">
+                                    <span class="profile-picture-edit">
+                                        @if (Model == null || string.IsNullOrEmpty(Model.SliderAnh1))
+                                        {
+                                            <img id="slider1" class="editable img-responsive editable-click editable-empty" src="~/Image/Layout/no-image.jpg" />
+                                        }
+                                        else
+                                        {
+                                            <img id="slider1" class="editable img-responsive editable-click editable-empty" src="~/Image/ThietLapChung/Slider/@Model.SliderAnh1" />
+                                        }
+                                    </span>
+                                </div>
+                                <div class="col-md-5">@Html.TextBoxFor(model => model.SliderAnh1, new { type = "file", @class = "imagepath", accept = ".jpg, .jpeg, .gif, .png", onchange = "ShowPreview(this)" })</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.SliderTieuDe1, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.EditorFor(model => model.SliderTieuDe1, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.SliderTieuDe1, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.SliderLink1, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.EditorFor(model => model.SliderLink1, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.SliderLink1, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <p style="border-bottom:1px solid #ff0000; font-weight:bold;">Slider 2</p>
+
+                            <div class="form-group col-md-6">
+                                @Html.LabelFor(model => model.SliderAnh2, htmlAttributes: new { @class = "control-label col-md-3" })
+                                <div class="col-md-4">
+                                    <span class="profile-picture-edit">
+                                        @if (Model == null || string.IsNullOrEmpty(Model.SliderAnh2))
+                                        {
+                                            <img id="slider2" class="editable img-responsive editable-click editable-empty" src="~/Image/Layout/no-image.jpg" />
+                                        }
+                                        else
+                                        {
+                                            <img id="slider2" class="editable img-responsive editable-click editable-empty" src="~/Image/ThietLapChung/Slider/@Model.SliderAnh2" />
+                                        }
+                                    </span>
+                                </div>
+                                <div class="col-md-5">@Html.TextBoxFor(model => model.SliderAnh2, new { type = "file", @class = "imagepath", accept = ".jpg, .jpeg, .gif, .png", onchange = "ShowPreview(this)" })</div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.SliderTieuDe2, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.EditorFor(model => model.SliderTieuDe2, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.SliderTieuDe2, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.SliderLink2, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.EditorFor(model => model.SliderLink2, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.SliderLink2, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <p style="border-bottom:1px solid #ff0000; font-weight:bold;">Slider 3</p>
+                            <div class="form-group col-md-6">
+                                @Html.LabelFor(model => model.SliderTieuDe3, htmlAttributes: new { @class = "control-label col-md-3" })
+                                <div class="col-md-4">
+                                    <span class="profile-picture-edit">
+                                        @if (Model == null || string.IsNullOrEmpty(Model.SliderAnh3))
+                                        {
+                                            <img id="slider3" class="editable img-responsive editable-click editable-empty" src="~/Image/Layout/no-image.jpg" />
+                                        }
+                                        else
+                                        {
+                                            <img id="slider3" class="editable img-responsive editable-click editable-empty" src="~/Image/ThietLapChung/Slider/@Model.SliderAnh3" />
+                                        }
+                                    </span>
+                                </div>
+                                <div class="col-md-5">@Html.TextBoxFor(model => model.SliderAnh3, new { type = "file", @class = "imagepath", accept = ".jpg, .jpeg, .gif, .png", onchange = "ShowPreview(this)" })</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.SliderTieuDe3, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.EditorFor(model => model.SliderTieuDe3, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.SliderTieuDe3, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.SliderLink3, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.EditorFor(model => model.SliderLink3, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.SliderLink3, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="danhmuc">
+                        <div class="box-body">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.LoaiSpId1, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.DropDownListFor(m => m.LoaiSpId1, (SelectList)this.ViewBag.dsloaisp, new { id = "DsLoaiSp1", @class = "selectLoaiSp show-tick form-control" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.LoaiSpId2, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.DropDownListFor(m => m.LoaiSpId2, (SelectList)this.ViewBag.dsloaisp, new { id = "DsLoaiSp1", @class = "selectLoaiSp show-tick form-control" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.LoaiSpId3, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.DropDownListFor(m => m.LoaiSpId3, (SelectList)this.ViewBag.dsloaisp, new { id = "DsLoaiSp1", @class = "selectLoaiSp show-tick form-control" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.LoaiSpId4, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.DropDownListFor(m => m.LoaiSpId4, (SelectList)this.ViewBag.dsloaisp, new { id = "DsLoaiSp1", @class = "selectLoaiSp show-tick form-control" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.LoaiSpId5, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.DropDownListFor(m => m.LoaiSpId5, (SelectList)this.ViewBag.dsloaisp, new { id = "DsLoaiSp1", @class = "selectLoaiSp show-tick form-control" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.LoaiSpId6, htmlAttributes: new { @class = "control-label col-md-3" })
+                                    <div class="col-md-9">
+                                        @Html.DropDownListFor(m => m.LoaiSpId6, (SelectList)this.ViewBag.dsloaisp, new { id = "DsLoaiSp1", @class = "selectLoaiSp show-tick form-control" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    @* end slider *@
+                    <div class="tab-pane" id="gioithieu">
+                        <div class="box-body">
+                            <div class="form-group col-md-12">
+                                @Html.TextAreaFor(model => model.GioiThieu, new { @class = "textarea" })
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-footer">
+            <button type="submit" class="btn btn-primary">Lưu</button>
+        </div>
+    }
+</section>
+@section jsBody
+{
+    <!-- CK Editor -->
+    <script src="~/Areas/Admin/bower_components/ckeditor/ckeditor.js"></script>
+    <!-- Bootstrap WYSIHTML5 -->
+    <script src="~/Areas/Admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.imagepath').filestyle({
+
+            iconName: 'glyphicon glyphicon-file',
+
+            buttonText: '',
+
+            buttonName: 'btn-primary'
+
+        });
+        
+
+        $.validator.unobtrusive.parse("form");
+        $(function () {
+            CKEDITOR.replace('GioiThieu')
+        });
+         $('form').submit(function () {
+             //var serializedForm = $(this).serialize();
+             var serializedForm = new FormData($('form')[0])
+            $.ajax({
+                url: '@Url.Action("Save", "ThietLapChung")',
+                type: "POST",
+                enctype: 'multipart/form-data',
+                contentType: false,
+                processData: false,
+                cache: false,
+                data: serializedForm,
+                success: function (result) {
+                    if (result) {
+                        swal("Thành công", "Đã lưu thành công!", "success");
+                    }
+
+
+                }
+
+            });
+            return false;
+        });
+
+        $('#DsLoaiSp1').attr('data-live-search', true);
+        $('#DsLoaiSp2').attr('data-live-search', true);
+        $('#DsLoaiSp3').attr('data-live-search', true);
+        $('#DsLoaiSp4').attr('data-live-search', true);
+        $('#DsLoaiSp5').attr('data-live-search', true);
+        $('#DsLoaiSp6').attr('data-live-search', true);
+
+        $('.selectLoaiSp').selectpicker(
+            {
+                width: '100%',
+                title: '- [Chọn mục sản phẩm] -',
+                style: 'btn-warning',
+                size: 6
+            });
+
+    });
+
+</script>
+<script>
+    function ShowPreview(input) {
+        if (input.files && input.files[0]) {
+            var ImageDir = new FileReader();
+            ImageDir.onload = function (e) {
+                $('#avatar').attr('src', e.target.result);
+            }
+            ImageDir.readAsDataURL(input.files[0]);
+        }
+    };
+
+</script>
+
+@section css{
+    <style>
+        .profile-picture-edit {
+            height: 130px !important;
+            width: 130px !important;
+        }
+    </style>
+}

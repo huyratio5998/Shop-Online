@@ -1,0 +1,102 @@
+﻿@*@model SfStoreOnline.Models.TinTuc TinTuc = ViewBag.objTinTuc;*@
+@{
+    SfStoreOnline.Models.TinTuc TinTuc = ViewBag.objTinTuc;
+    ViewBag.Title = TinTuc.TieuDe;
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+@*<style>
+        .NoiDung{
+            widows:100%;
+            height: 500px;
+        }
+    </style>*@
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: url(/Image/TinTuc/heading-pages-05.jpg);">
+    <h2 class="l-text2 t-center">
+        @TinTuc.TieuDe
+    </h2>
+</section>
+
+<section class="bgwhite p-t-60 p-b-25">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-9 p-b-80">
+                <div class="p-r-50 p-r-0-lg">
+                    <div class="p-b-40">
+                        <div class="blog-detail-img wrap-pic-w">
+                            <img src="~/Image/TinTuc/@TinTuc.ImageName" alt="IMG-BLOG">
+                        </div>
+
+                        <div class="blog-detail-txt p-t-33">
+                            <h4 class="p-b-11 m-text24">
+                                @TinTuc.TieuDe
+                            </h4>
+
+                            <div class="s-text8 flex-w flex-m p-b-21">
+                                <span>
+                                    @TinTuc.User.HoTen
+                                    <span class="m-l-3 m-r-6">|</span>
+                                </span>
+
+                                <span>
+                                    @TinTuc.Date0
+                                    <span class="m-l-3 m-r-6">|</span>
+                                </span>
+
+                                <span>
+                                    @TinTuc.tag
+                                    <span class="m-l-3 m-r-6">|</span>
+                                </span>
+
+                                @*<span>
+                                        8 Comments
+                                    </span>*@
+                            </div>
+
+                            <p class="p-b-25" id="NoiDung">
+                                @*@Html.EditorFor(model => TinTuc.NoiDung, new { htmlAttributes = new { @disabled ="disabled", @class="NoiDung" } })*@
+                                @*@TinTuc.NoiDung*@
+                                @Html.Raw(TinTuc.NoiDung)
+                            </p>
+                        </div>
+                        <div class="flex-m flex-w p-t-20">
+                            <span class="s-text20 p-r-20">
+                                Thẻ
+                            </span>
+                            <div class="wrap-tags flex-w">
+                                <a href="#" class="tag-item">
+                                    @TinTuc.tag
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leave a comment -->
+                    <form class="leave-comment">
+                        <h4 class="m-text25 p-b-14">
+                            Để lại bình luận
+                        </h4>
+                        <!--Update online sẽ thêm data-href =  từng bài viết theo Id.-->
+                        <div class="fb-comments" data-href="congdn.tk" data-numposts="5"></div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3 p-b-80">
+                @RenderPage("LayoutTinTuc.cshtml")
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.1&appId=230215277837213&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    
+</script>

@@ -1,0 +1,177 @@
+﻿@model SfStoreOnline.Models.User
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Thêm mới người dùng</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-4 label-required" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                   
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-4 label-required" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HoTen, htmlAttributes: new { @class = "control-label col-md-4 label-required" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Sdt, htmlAttributes: new { @class = "control-label col-md-4 label-required" })
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                        @Html.EditorFor(model => model.Sdt, new { htmlAttributes = new { @class = "form-control", placeholder = "Số điện thoại" } })
+                    </div>
+
+                    @Html.ValidationMessageFor(model => model.Sdt, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-4" })
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email" } })
+                    </div>
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NhomId, "Nhóm người dùng", htmlAttributes: new { @class = "control-label col-md-4 label-required" })
+                <div class="col-md-8">
+                    @Html.DropDownList("NhomId", (SelectList)ViewBag.lstNhom, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.NhomId, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <span class="profile-picture-edit">
+                        @if (Model == null || string.IsNullOrEmpty(Model.AvatarName))
+                        {
+                            <img id="avatar" class="editable img-responsive editable-click editable-empty" src="~/Image/Layout/Noavar.png" />
+                        }
+                        else
+                        {
+                            <img id="avatar" class="editable img-responsive editable-click editable-empty" src="~/Image/NguoiDung/@Model.AvatarName" />
+                        }
+                    </span>
+
+
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-6">@Html.TextBoxFor(model => model.AvatarName, new { type = "file", id = "avatarpath", accept = ".jpg, .jpeg, .gif, .png", onchange = "ShowPreview(this)" })</div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    @Html.CheckBoxFor(model => model.TruyCapQuanTri)<label for="@Html.NameFor(model => model.TruyCapQuanTri)">&nbsp;Truy cập trang quản trị</label>
+                    @Html.ValidationMessageFor(model => model.TruyCapQuanTri, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-4">
+                    @Html.CheckBoxFor(model => model.IsAdmin)<label for="@Html.NameFor(model => model.IsAdmin)">&nbsp;Là admin</label>
+                    @Html.ValidationMessageFor(model => model.IsAdmin, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    @Html.CheckBoxFor(model => model.Status)<label for="@Html.NameFor(model => model.Status)">&nbsp;Sử dụng</label>
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <input type="submit" id="approve-btn" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+     $(document).ready(function () {
+         $('#avatarpath').filestyle({
+
+             iconName: 'glyphicon glyphicon-file',
+
+             buttonText: '',
+
+             buttonName: 'btn-primary'
+
+         });
+         $('form').submit(function () {
+             //var serializedForm = $(this).serialize();
+             var serializedForm = new FormData($('form')[0])
+            $.ajax({
+                url: '@Url.Action("SaveThemMoi", "NguoiDung")',
+                type: "POST",
+                enctype: 'multipart/form-data',
+                contentType: false,
+                processData: false,
+                cache: false,
+                data: serializedForm,
+                success: function (result) {
+                    $("#dynamic-table").load(window.location + " #dynamic-table");
+
+                    $('#myModal').modal('hide');
+
+                    swal("Thành công", "Thêm mới thành công!", "success");
+
+                }
+
+            });
+            return false;
+         });
+         $.validator.unobtrusive.parse("form");
+         
+    });
+
+</script>
+<script>
+
+
+    function ShowPreview(input) {
+        if (input.files && input.files[0]) {
+            var ImageDir = new FileReader();
+            ImageDir.onload = function (e) {
+                $('#avatar').attr('src', e.target.result);
+            }
+            ImageDir.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
+

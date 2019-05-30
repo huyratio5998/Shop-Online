@@ -1,0 +1,206 @@
+﻿@model SfStoreOnline.Models.DotKm
+@{
+    IEnumerable<SfStoreOnline.Models.DotKmCt> lstdotKmCt = ViewBag.lstdotKmCt;
+}
+@using (Html.BeginForm("Edit", "DotKm", FormMethod.Post, new { encType = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.Date0)
+    @Html.HiddenFor(model => model.Time0)
+    @Html.HiddenFor(model => model.UserId0)
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Sửa đợt khuyến mại</h4>
+    </div>
+    <div class="modal-body">
+
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.MaDotKm, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.MaDotKm, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MaDotKm, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.TenDotKm, htmlAttributes: new { @class = "control-label col-md-3 label-required" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.TenDotKm, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenDotKm, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NgayBd, htmlAttributes: new { @class = "control-label col-md-3  label-required" })
+                <div class="col-md-9">
+                    @*@Html.EditorFor(model => model.NgayBd, new { @type = "date", @Value = Model.NgayBd.ToString("dd-MM-yyyy") })*@
+                    @*@Html.TextBoxFor(model => model.NgayBd, new { htmlAttributes = new { @class = "dateTimePicker" } })*@
+                    @Html.EditorFor(model => model.NgayBd, new { htmlAttributes = new { @class = "dateTimePicker" } })
+
+                    @Html.ValidationMessageFor(model => model.NgayBd, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.NgayKt, htmlAttributes: new { @class = "control-label col-md-3  label-required" })
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.NgayKt, "{ 0:dd/MM/yyyy}", new { @class = "dateTimePicker" })
+                    @Html.ValidationMessageFor(model => model.NgayKt, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
+                    @Html.CheckBoxFor(model => model.Status)
+                    <label for="@Html.NameFor(model => model.Status)">Sử dụng</label>
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group box box-group tbb" style="margin:0px 10px;">
+                <table class="table table-responsive table-hover small-text" id="tb">
+                    <thead>
+                        <tr class="tr-header">
+                            <th>Loại sản phẩm</th>
+                            <th>Chiết khấu</th>
+                            <th style="text-align:center;"><a href="javascript:void(0);" style="font-size:18px;color:red;text-align:center;" id="addMore" title="Thêm"><span class="glyphicon glyphicon-plus"></span></a></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var dotKmCt in Model.DotKmCts)
+                        {
+                            <tr>
+                                <td width="50%">
+                                    @*Hiển thị danh sách chủ đề*@
+                                    @*@Html.DropDownListFor(modelItem => dotKmCt.LoaiSpId,
+                                        (SelectList)ViewBag.TenLoaiSp, "---Chọn loại sản phẩm---", new { @class = "form-control" })*@
+                                    @Html.DropDownListFor(modelItem => dotKmCt.LoaiSpId, new SelectList(ViewBag.lstLoaiSP, "Id", "TenLoaiSp", dotKmCt.LoaiSpId), new { @class = "form-control" })
+
+                                    @Html.ValidationMessageFor(modelItem => dotKmCt.LoaiSpId, "", new { @class = "text-danger" })
+                                </td>
+                                <td width="45%">
+                                    @Html.DropDownListFor(modelItem => dotKmCt.ChietKhauId, new SelectList(ViewBag.lstChietKhau, "Id", "TenCk", dotKmCt.ChietKhauId), new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(modelItem => dotKmCt.ChietKhauId, "", new { @class = "text-danger" })
+                                </td>
+
+                                <td width="5%" align="center"><a href='javascript:void(0);' class='remove'><span class='glyphicon glyphicon-remove'></span></a></td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <input type="submit" id="approve-btn" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    $(function () {
+        $('#addMore').on('click', function () {
+            var data = $("#tb tr:eq(1)").clone(true).appendTo("#tb");
+            data.find("input").val('');
+        });
+        $(document).on('click', '.remove', function () {
+            var trIndex = $(this).closest("tr").index();
+
+            if (trIndex > 0) {
+                $(this).closest("tr").remove();
+            } else {
+                //alert("Không thể xóa dòng đầu tiên!");
+            }
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+     $(document).ready(function () {
+
+         $('form').submit(function () {
+             var serializedForm = new FormData($('form')[0]);
+             console.log(serializedForm);
+             $.ajax({
+                 url: '@Url.Action("SaveSua", "DotKhuyenMai")',
+                 type: "POST",
+                 enctype: 'multipart/form-data',
+                 contentType: false,
+                 processData: false,
+                 cache: false,
+                 data: serializedForm,
+                 success: function (result) {
+                     var MaDotKm = document.getElementById('MaDotKm').value;
+
+                     //window.alert(NgayBd);
+                     var data = JSON.stringify(getAllData(MaDotKm));
+                     console.log('-----------');
+                     console.log(data);
+                     $.ajax({
+                         url: '@Url.Action("SaveChiTietSua", "DotKhuyenMai")',
+                         type: "POST",
+                         enctype: 'multipart/form-data',
+                         dataType: 'json',
+                         contentType: 'application/json; charset=utf-8',
+                         data: JSON.stringify({ 'getepassdata': data }),
+                         success: function (results) {
+
+                             $("#dynamic-table").load(window.location + " #dynamic-table");
+
+                             $('#myModal').modal('hide');
+
+                             swal("Thành công", "Thêm mới thành công!", "success");
+                         }
+                     });
+
+
+                }
+
+            });
+            return false;
+         });
+         $.validator.unobtrusive.parse("form");
+
+         function getAllData(result) {
+             var data = [];
+             $('#tb tbody tr').each(function () {
+                 var MaDotKm = result;
+                 var LoaiSpId = $(this).find('#dotKmCt_LoaiSpId').val();
+                 var ChietKhauId = $(this).find('#dotKmCt_ChietKhauId').val();
+                 var NgayBd = document.getElementById('NgayBd').value;
+                 var NgayKt = document.getElementById('NgayKt').value;
+                 var alldata = {
+                     'MaDotKm': MaDotKm,
+                     'NgayBd': NgayBd,
+                     'NgayKt': NgayKt,
+                     'LoaiSpId': LoaiSpId,
+                     'ChietKhauId': ChietKhauId,
+                 }
+                 data.push(alldata);
+             });
+             console.log(data);
+             return data;
+         };
+
+
+    });
+
+</script>
+
+<style>
+    .tbb {
+        max-height: 200px;
+        overflow-y: auto;
+    }
+</style>

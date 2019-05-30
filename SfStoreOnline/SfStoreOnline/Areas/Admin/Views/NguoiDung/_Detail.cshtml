@@ -1,0 +1,100 @@
+﻿@model SfStoreOnline.Models.User
+
+<div>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Chi tiết người dùng</h4>
+    </div>
+    <div class="modal-body">
+        <div class="col-md-3">
+            <span class="profile-picture">
+                @if (string.IsNullOrEmpty(@Model.AvatarName))
+                {
+                    <img id="avatar" class="editable img-responsive editable-click editable-empty" alt="@Model.UserName" src="~/Image/Layout/Noavar.png" style="display: block;">
+                }
+                else
+                {
+                    <img id="avatar" class="editable img-responsive editable-click editable-empty" alt="@Model.UserName" src="~/Image/NguoiDung/@Model.AvatarName" style="display: block;">
+                }
+
+            </span>
+        </div>
+        <div class="col-md-9">
+            <div class="profile-user-info profile-user-info-striped">
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.UserName) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.UserName)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.HoTen) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.HoTen)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.Sdt) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.Sdt)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.Email) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.Email)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.NhomId) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.NhomNguoiDung.TenNhom)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.Status) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">
+                            @if (Model.Status == true)
+                            {
+                                <p>Sử dụng</p>
+                            }
+                            else
+                            {
+                                <p>Không sử dụng</p>
+                            }
+                        </span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.IsAdmin) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.IsAdmin)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,382 @@
+﻿@model SfStoreOnline.Models.NhapKho
+
+@{
+    ViewBag.Title = "Sửa phiếu nhập kho";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+@section css
+{
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/Areas/Admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="~/Areas/Admin/bower_components/jquery-ui/themes/base/jquery-ui.min.css">
+
+}
+
+<style type="text/css">
+    .form-horizontal .form-group {
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+
+    .form-group {
+        margin: 10px auto;
+    }
+
+    .form-horizontal .control-label {
+        text-align: inherit;
+    }
+
+    tbody input {
+        height: 34px;
+    }
+
+    th {
+        text-align: center;
+    }
+</style>
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-md-4">
+
+            <div class="box box-solid">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Thông tin chi tiết</h3>
+
+                    <div class="box-tools">
+                        <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body no-padding">
+
+                    @using (Html.BeginForm("Savesua", "NhapKho", FormMethod.Post, new { encType = "multipart/form-data" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        @Html.HiddenFor(model => model.Id)
+                        @Html.HiddenFor(model => model.Date0)
+                        @Html.HiddenFor(model => model.Time0)
+                        @Html.HiddenFor(model => model.UserId0)
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.SoPhieuNhap, htmlAttributes: new { @class = "control-label col-md-4 label-required" })
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.SoPhieuNhap, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        @Html.ValidationMessageFor(model => model.SoPhieuNhap, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.NhaCungCapId, htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        <div>@Html.DropDownListFor(model => model.NhaCungCapId, (SelectList)ViewBag.lstNhaCungCap, "---Chọn nhà cung cấp---", new { @class = "form-control col-md-10" })</div>
+
+                                        @Html.ValidationMessageFor(model => model.NhaCungCapId, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.NgayNhap, htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar">
+                                                </i>
+                                            </div>
+                                            @Html.EditorFor(model => model.NgayNhap, new { htmlAttributes = new {  @class = "form-control  ", @id = "datepicker" } })
+
+                                        </div>
+                                        @*@Html.ValidationMessageFor(model => model.NgayNhap, "", new { @class = "text-danger" })*@
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.NguoiNhapId, htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.User.HoTen, new { htmlAttributes = new { @class = "form-control", @disabled = "true" } })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.GhiChu, htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        @Html.TextAreaFor(model => model.GhiChu, 2, 1, new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(model => model.GhiChu, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.TongSL, htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.TongSL, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        @Html.ValidationMessageFor(model => model.TongSL, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.TongTien, htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.TongTien, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        @Html.ValidationMessageFor(model => model.TongTien, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.TongCk, htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.TongCk, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        @Html.ValidationMessageFor(model => model.TongCk, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.PhiVc, htmlAttributes: new { @class = "control-label col-md-4 label-required" })
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.PhiVc, new { htmlAttributes = new { @class = "form-control", @type = "number" } })
+                                        @Html.ValidationMessageFor(model => model.PhiVc, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.TongTt, htmlAttributes: new { @class = "control-label col-md-4" })
+                                    <div class="col-md-8">
+                                        @Html.EditorFor(model => model.TongTt, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                        @Html.ValidationMessageFor(model => model.TongTt, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-offset-4 col-md-8">
+
+                                        <a href='@Url.Action("Index","NhapKho")' class="btn btn-default" style="width:35%; float:left; margin-right:5%;">Trở lại</a>
+                                        <input id="Luu" type="submit" class="btn btn-primary " style="width:60%;" value="Lưu" />
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    }
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /. box -->
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+        <div class="col-md-8">
+            <div class="box">
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <table width="100%" class="table table-bordered table-striped dataTable" id="tbChiTiet">
+                        <thead>
+                            <tr role="row">
+                                <th >
+                                    Sản phẩm
+                                </th>
+                                <th>
+                                    Số lượng
+                                </th>
+                                <th>
+                                    Giá bán
+                                </th>
+                                <th>
+                                    Thành tiền
+                                </th>
+                                <th>
+                                    Chiết khấu
+                                </th>
+
+
+                                <th style="text-align:center;"><a href="javascript:void(0);" style="font-size:18px;color:red;text-align:center;" id="addMore" title="Thêm"><span class="glyphicon glyphicon-plus"></span></a></th>
+                                <th style="display:none;">
+                                    pt ck
+                                </th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            @foreach (var item in Model.NhapKhoCts)
+                            {
+
+                                <tr style="text-align: center;">
+                                    <td width="30%">
+                                        @Html.DropDownListFor(modelItem => item.SanPhamId, new SelectList(ViewBag.lstSanPham, "Id", "TenSp", item.SanPhamId), new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(modelItem => item.SanPhamId, "", new { @class = "text-danger" })
+                                    </td>
+
+                                    <td class="sl" width="15%">
+                                        @Html.EditorFor(modelItem => item.SoLuong, new { htmlAttributes = new { @class = "form-control", type = "number" } })
+                                    </td>
+                                    <td class="gia" width="15%">
+                                        @Html.EditorFor(modelItem => item.GiaBan, new { htmlAttributes = new { @class = "form-control", type = "number" } })
+                                    </td>
+                                    <td class="tien" width="15%">
+                                        @Html.EditorFor(modelItem => item.Tien, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                    </td>
+                                    <td class="ck" width="20%">
+                                        @Html.DropDownListFor(modelItem => item.ChietKhauId, new SelectList(ViewBag.lstChietKhau, "Id", "TenCK", item.ChietKhauId), "---Chọn chiết khấu---", new { @class = "form-control" })
+                                        @Html.ValidationMessageFor(moldelItem => item.ChietKhauId, "", new { @class = "text-danger" })
+                                    </td>
+
+                                    <td width="5%" align="center"><a href='javascript:void(0);' class='remove'><span class='glyphicon glyphicon-remove'></span></a></td>
+                                    <td class="ptck" style="display:none;"><input type="number" name="ptck" /></td>
+                                </tr>
+                            }
+
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <!-- /.box-body -->
+            </div>
+
+            <!-- /. box -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->
+
+
+@section jsBody
+{
+    <script src="~/Areas/Admin/bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/Areas/Admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#dynamic-table').DataTable({
+                'paging': true,
+                'lengthChange': true,
+                'searching': false,
+                'ordering': true,
+                'info': true,
+                'autoWidth': false
+            });
+        });
+    </script>
+}
+
+<script>
+   
+    $(function () {
+        $("#datepicker").datepicker({
+            dateFormat: "dd-mm-yy"
+        });
+    });
+    $(function () {
+        $('#addMore').on('click', function () {
+            var data = $("#tbChiTiet tr:eq(1)").clone(true).appendTo("#tbChiTiet");
+            data.find("input").val('');
+        });
+        $(document).on('click', '.remove', function () {
+            var trIndex = $(this).closest("tr").index();
+
+            if (trIndex > 0) {
+                $(this).closest("tr").remove();
+            } else {
+                alert("Không thể xóa dòng đầu tiên!");
+            }
+        });
+        var PhiVC = 0;
+        $('#tbChiTiet').on('change', 'input', function () {
+            var data = JSON.stringify(getAllData());
+            $.ajax({
+                url: '@Url.Action("LayTong","NhapKho")',
+                type: "GET",
+                ajaxasync: true,
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                data: { 'getepassdata': data },
+                success: function (result) {
+                    $('#TongSL').val(result.TongSL);
+                    $('#TongCk').val(result.TongCK);
+                    $('#TongTien').val(result.TongTien);
+                    PhiVC=$('#PhiVc').val();
+                    $('#TongTt').val(result.Tongtt - PhiVC);
+                },
+                error: function () {
+
+                }
+            });
+        });
+    });
+    $('form').submit(function () {
+             var serializedForm = new FormData($('form')[0]);
+             console.log(serializedForm);
+             $.ajax({
+                 url: '@Url.Action("SaveSua", "NhapKho")',
+                 type: "POST",
+                 enctype: 'multipart/form-data',
+                 contentType: false,
+                 processData: false,
+                 cache: false,
+                 data: serializedForm,
+                 success: function (result) {
+                     var data = JSON.stringify(getAllData());
+                     console.log('-----------');
+                     console.log(data);
+                     $.ajax({
+                         url: '@Url.Action("SaveSuaChiTiet", "NhapKho")',
+                         type: "POST",
+                         enctype: 'multipart/form-data',
+                         dataType: 'json',
+                         contentType: 'application/json; charset=utf-8',
+                         data: JSON.stringify({ 'getepassdata': data, Id: result.Id}),
+                         success: function (results) {
+
+                             $("#dynamic-table").load(window.location + " #dynamic-table");
+
+                             $('#myModal').modal('hide');
+
+                             swal("Thành công", "Sửa thành công!", "success");
+                         }
+                     });
+                 },
+                 error: function () {
+                     console.log("error roi");
+                 }
+        });
+        return false;
+         });
+    $.validator.unobtrusive.parse("form");
+    function getAllData() {
+        var data = [];
+        $('#tbChiTiet tbody tr').each(function () {
+            var SoLuong = $(this).find('#item_SoLuong').val();
+            var GiaBan = $(this).find('#item_GiaBan').val();
+            var Tien = SoLuong * GiaBan;
+            $(this).find('#item_Tien').val(Tien);
+            var ChietKhauId = $(this).find('#item_ChietKhauId option:selected').val();
+            var SanPhamId = $(this).find('#item_SanPhamId option:selected').val();
+            if (ChietKhauId == "") {
+                ChietKhauId = 0;
+            }
+            var alldata = {
+                'SanPhamId': SanPhamId,
+                'SoLuong': SoLuong,
+                'GiaBan': GiaBan,
+                'Tien': Tien,
+                'ChietKhauId': ChietKhauId,
+                'ptck': 0,
+                'tontai':1,
+
+            }
+
+            data.push(alldata);
+        });
+        console.log(data);
+        return data;
+    };
+
+</script>

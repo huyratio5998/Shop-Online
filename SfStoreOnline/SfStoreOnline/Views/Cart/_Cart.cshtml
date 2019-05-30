@@ -1,0 +1,44 @@
+﻿@model IEnumerable<SfStoreOnline.Models.GioHang>
+
+<ul class="header-cart-wrapitem">
+    @foreach (SfStoreOnline.Models.GioHang item in Model)
+    {
+        <li class="header-cart-item">
+            <div class="header-cart-item-img">
+                @if (string.IsNullOrEmpty(item.SanPham.ImageName.ToString()))
+                {
+                    <img src="~/Image/Layout/no-image.jpg" alt="IMG">
+                }
+                else
+                {
+                    <img src="~/Image/SanPham/@item.SanPham.ImageName" alt="IMG">
+                }
+
+            </div>
+
+            <div class="header-cart-item-txt">
+                <a href="#" class="header-cart-item-name">
+                    @item.SanPham.TenSp
+                </a>
+
+                <span class="header-cart-item-info">
+
+                    @item.SoLuong x @String.Format("{0:0,0}", item.SanPham.GiaBan) VNĐ
+                </span>
+            </div>
+        </li>
+    }
+</ul>
+<div class="header-cart-total">
+    Tổng tiền: @String.Format("{0:0,0} VNĐ", Model.Sum(t => t.SoLuong * t.SanPham.GiaBan))
+</div>
+<div class="header-cart-buttons">
+    
+    <div class="header-cart-wrapbtn">
+        <!-- Button -->
+        <a href="@Url.Action("Cart","Home")" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+            Xem giỏ hàng
+        </a>
+    </div>
+
+</div>

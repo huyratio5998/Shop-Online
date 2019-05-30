@@ -1,0 +1,298 @@
+﻿@{
+    ViewBag.Title = "Trang chủ";
+    SfStoreOnline.Models.MucNoiBat mucnoibat = ViewBag.mucnoibat;
+    SfStoreOnline.Models.ThietLapChung thongtinchung = ViewBag.thongtinchung;
+    if (Session[SfStoreOnline.Models.CommonConstants.USER_SESSION] == null)
+    {
+        Html.Action("GetSession", "Home");
+    }
+
+}
+
+@if (thongtinchung != null)
+{
+    <!-- Slide1 -->
+    <section class="slide1">
+        <div class="wrap-slick1">
+            <div class="slick1">
+                @{
+                    var _style = string.IsNullOrEmpty(thongtinchung.SliderAnh1.ToString()) ? "background-image: url(../Image/Layout/master-slide-01.jpg) ;" : "background-image: url(../Image/ThietLapChung/Slider/" + thongtinchung.SliderAnh1 + ") ;";
+                }
+                <div class="item-slick1 item1-slick1" style="@_style">
+                    <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                        <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
+                            @thongtinchung.SliderTieuDe1
+                        </span>
+
+                        @*<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
+                                New arrivals
+                            </h2>*@
+
+                        <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
+                            <!-- Button -->
+                            <a href="@thongtinchung.SliderLink1" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                @{
+                    _style = string.IsNullOrEmpty(thongtinchung.SliderAnh2.ToString()) ? "background-image: url(../Image/Layout/master-slide-01.jpg) ;" : "background-image: url(../Image/ThietLapChung/Slider/" + thongtinchung.SliderAnh2 + ") ;";
+                }
+                <div class="item-slick1 item2-slick1" style="@_style">
+                    <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                        <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rollIn">
+                            @thongtinchung.SliderTieuDe2
+                        </span>
+
+                        @*<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
+                                New arrivals
+                            </h2>*@
+
+                        <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
+                            <!-- Button -->
+                            <a href="@thongtinchung.SliderLink2" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                @{
+                    _style = string.IsNullOrEmpty(thongtinchung.SliderAnh3.ToString()) ? "background-image: url(../Image/Layout/master-slide-01.jpg) ;" : "background-image: url(../Image/ThietLapChung/Slider/" + thongtinchung.SliderAnh3 + ") ;";
+                }
+                <div class="item-slick1 item3-slick1" style="@_style">
+                    <div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
+                        <span class="caption1-slide1 m-text1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
+                            @thongtinchung.SliderTieuDe3
+                        </span>
+
+                        @*<h2 class="caption2-slide1 xl-text1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
+                                New arrivals
+                            </h2>*@
+
+                        <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
+                            <!-- Button -->
+                            <a href="@thongtinchung.SliderLink3" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                                Shop Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+}
+<!-- Banner -->
+<section class="banner bgwhite p-t-40 p-b-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+                <!-- block1 -->
+                @if (mucnoibat.loaisp1 != null)
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/LoaiSp/@mucnoibat.loaisp1.ImagName" alt="IMG-BENNER">
+
+                        <div class="block1-wrapbtn w-size2">
+                            <!-- Button -->
+                            <a href="@Url.Action("DanhSach","SanPham", new { Id = mucnoibat.loaisp1.Id})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                @mucnoibat.loaisp1.TenLoaiSp
+                            </a>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/Layout/banner-02.jpg" alt="IMG-BENNER">
+                    </div>
+                }
+
+                <!-- block1 -->
+                @if (mucnoibat.loaisp2 != null)
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/LoaiSp/@mucnoibat.loaisp2.ImagName" alt="IMG-BENNER">
+
+                        <div class="block1-wrapbtn w-size2">
+                            <!-- Button -->
+                            <a href="@Url.Action("DanhSach","SanPham", new { Id = mucnoibat.loaisp2.Id})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                @mucnoibat.loaisp2.TenLoaiSp
+                            </a>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/banner-05.jpg" alt="IMG-BENNER">
+                    </div>
+                }
+
+            </div>
+
+            <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+                <!-- block1 -->
+                @if (mucnoibat.loaisp3 != null)
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/LoaiSp/@mucnoibat.loaisp3.ImagName" alt="IMG-BENNER">
+
+                        <div class="block1-wrapbtn w-size2">
+                            <!-- Button -->
+                            <a href="@Url.Action("DanhSach","SanPham", new { Id = mucnoibat.loaisp3.Id})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                @mucnoibat.loaisp3.TenLoaiSp
+                            </a>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/banner-03.jpg" alt="IMG-BENNER">
+                    </div>
+                }
+
+
+                <!-- block1 -->
+
+                @if (mucnoibat.loaisp4 != null)
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/LoaiSp/@mucnoibat.loaisp4.ImagName" alt="IMG-BENNER">
+
+                        <div class="block1-wrapbtn w-size2">
+                            <!-- Button -->
+                            <a href="@Url.Action("DanhSach","SanPham", new { Id = mucnoibat.loaisp4.Id})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                @mucnoibat.loaisp4.TenLoaiSp
+                            </a>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/banner-07.jpg" alt="IMG-BENNER">
+                    </div>
+                }
+
+            </div>
+            <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+                <!-- block1 -->
+                @if (mucnoibat.loaisp5 != null)
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/LoaiSp/@mucnoibat.loaisp5.ImagName" alt="IMG-BENNER">
+
+                        <div class="block1-wrapbtn w-size2">
+                            <!-- Button -->
+                            <a href="@Url.Action("DanhSach","SanPham", new { Id = mucnoibat.loaisp5.Id})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                @mucnoibat.loaisp5.TenLoaiSp
+                            </a>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="block1 hov-img-zoom pos-relative m-b-30">
+                        <img src="~/Image/banner-04.jpg" alt="IMG-BENNER">
+                    </div>
+                }
+
+                <!-- block2 -->
+                @if (Session[SfStoreOnline.Models.CommonConstants.USER_SESSION] != null)
+                {
+
+                    if (mucnoibat.loaisp6 != null)
+                    {
+                        <div class="block2 wrap-pic-w pos-relative m-b-30">
+                            <img src="~/Image/LoaiSp/@mucnoibat.loaisp6.ImagName" alt="IMG-BENNER">
+
+                            <div class="block1-wrapbtn w-size2">
+                                <!-- Button -->
+                                <a href="@Url.Action("DanhSach","SanPham", new { Id = mucnoibat.loaisp6.Id})" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                                    @mucnoibat.loaisp6.TenLoaiSp
+                                </a>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="block1 hov-img-zoom pos-relative m-b-30">
+                            <img src="~/Image/banner-05.jpg" alt="IMG-BENNER">
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="block2 wrap-pic-w pos-relative m-b-30">
+                        <img src="~/Image/Layout/icons/bg-01.jpg" alt="IMG">
+
+                        <div class="block2-content sizefull ab-t-l flex-col-c-m">
+                            <h4 class="m-text4 t-center w-size3 p-b-8">
+                                Đăng ký để nhận ưu đãi tốt nhất
+                            </h4>
+
+                            <p class="t-center w-size4">
+                                Các chương trình khuyến mại luôn được thông tin tới bạn!
+                            </p>
+
+                            <div class="w-size2 p-t-25">
+                                <!-- Button -->
+                                <a href="@Url.Action("DangKy","Authentication")" class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
+                                    Đăng ký
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sản phẩm mới -->
+@Html.Action("SanPhamMoiNhat", "Home")
+<!-- Sản phẩm nổi bật -->
+@Html.Action("SanPhamNoiBat", "Home")
+
+<!-- Tin tức -->
+@Html.Action("TinTucNb", "Home")
+
+<!-- Shipping -->
+<section class="shipping bgwhite p-t-62 p-b-46">
+    <div class="flex-w p-l-15 p-r-15">
+        <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
+            <h4 class="m-text12 t-center">
+                Chính sách giao hàng
+            </h4>
+
+            <a href="#" class="s-text11 t-center">
+                Mạng lưới vận chuyển giao hàng toàn quốc
+            </a>
+        </div>
+
+        <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
+            <h4 class="m-text12 t-center">
+                Chính sách đổi, trả hàng
+            </h4>
+
+            <span class="s-text11 t-center">
+                Miễn phí đổi trả 48h
+            </span>
+        </div>
+
+        <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
+            <h4 class="m-text12 t-center">
+                Mở cửa các ngày trong tuần
+            </h4>
+
+            <span class="s-text11 t-center">
+                Từ 8h đến 21h
+            </span>
+        </div>
+    </div>
+</section>
+

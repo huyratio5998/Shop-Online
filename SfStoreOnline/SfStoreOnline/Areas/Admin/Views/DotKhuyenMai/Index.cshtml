@@ -1,0 +1,194 @@
+﻿@model IEnumerable<SfStoreOnline.Models.DotKm>
+
+@{
+    ViewBag.Title = "Danh mục đợt khuyến mại";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@section css
+{
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/Areas/Admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+}
+<p>
+    <input type="button" value="Thêm mới" class="btn btn-primary" onclick="ThemMoi()" />
+</p>
+
+<div class="box">
+    <!-- /.box-header -->
+    <div class="box-body">
+        <table id="dynamic-table" class="table table-bordered table-striped dataTable">
+            <thead>
+                <tr role="row">
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 10%;">@Html.DisplayNameFor(model => model.MaDotKm)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 30%;">@Html.DisplayNameFor(model => model.TenDotKm)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 10%;">@Html.DisplayNameFor(model => model.NgayBd)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 10%;">@Html.DisplayNameFor(model => model.NgayKt)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 10%">@Html.DisplayNameFor(model => model.Status)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 10%">@Html.DisplayNameFor(model => model.Date0)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 10%">@Html.DisplayNameFor(model => model.Date2)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 10%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaDotKm)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TenDotKm)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayBd)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.NgayKt)
+                    </td>
+                    <td>
+                        @if (item.Status == true)
+                        {
+                            <span class="label label-success">Sử dụng</span>
+                        }
+                        else
+                        {
+                            <span class="label label-danger">Không sử dụng</span>
+                        }
+
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date0)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date2)
+                    </td>
+                    <td>
+                        <div class="action-buttons">
+                            <a class="blue" href="#" onclick="XemDotKm('@item.MaDotKm.ToString()', '@item.NgayBd.ToShortDateString()', '@item.NgayKt.ToShortDateString()')">
+                                <i class="qh-icon fa fa-eye bigger-130"></i>
+                            </a>
+                            <a class="green" href="#" onclick="SuaDotKm('@item.MaDotKm.ToString()', '@item.NgayBd.ToShortDateString()', '@item.NgayKt.ToShortDateString()')">
+                                <i class="qh-icon fa fa-pencil bigger-130"></i>
+                            </a>
+                            <a class="red" href="#" onclick="XoaDotKm('@item.MaDotKm.ToString()', '@item.NgayBd.ToShortDateString()', '@item.NgayKt.ToShortDateString()')">
+                                <i class="qh-icon fa fa-trash-o bigger-130"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <!-- /.box-body -->
+</div>
+@* dialog form *@
+<div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="modalcontent">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section jsBody
+{
+    <script src="~/Areas/Admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#dynamic-table').DataTable({
+                'paging': true,
+                'lengthChange': true,
+                'searching': false,
+                'ordering': true,
+                'info': true,
+                'autoWidth': false
+            });
+        });
+
+
+
+    </script>
+    <script type="text/javascript">
+        //---------------Thêm mới
+        function ThemMoi() {
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("ViewThemMoi","DotKhuyenMai")',
+                success: function (data) {
+                    $('#modalcontent').html(data);
+                    $('#myModal').modal('show');
+                }
+            });
+        };
+        //--------------Xóa
+        function XoaDotKm(MaDotKm, NgayBd, NgayKt) {
+            
+            swal({
+                title: "Bạn có chắc chắn muốn xóa không?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "OK",
+                cancelButtonText: "Cancel",
+                closeOnConfirm: false,
+                closeOnCancel: true
+            },
+                function (isConfirm) {
+                    if (isConfirm) {
+                        funcXoa(MaDotKm, NgayBd, NgayKt);
+                    }
+                });
+        };
+        function funcXoa(MaDotKm, NgayBd, NgayKt) {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("Xoa", "DotKhuyenMai")',
+                data: { MaDotKm: MaDotKm, NgayBd: NgayBd, NgayKt: NgayKt },
+                        ajaxasync: true,
+                        success: function () {
+                            $("#dynamic-table").load(window.location + " #dynamic-table");//Xóa thành công thì load lại dữ liệu bảng
+                            swal("Thành công", "Đã xóa thành công!", "success");
+
+                      },
+                      error: function () {
+                          swal("Error", "Có lỗi trong quá trình xóa", "error");
+                      }
+                });
+        };
+        //---------------Xem chi tiết
+        function XemDotKm(MaDotKm, NgayBd, NgayKt) {
+           
+            $.ajax({
+                type: 'GET',
+                data: { MaDotKm: MaDotKm, NgayBd: NgayBd, NgayKt: NgayKt },
+                url: '@Url.Action("ViewChiTiet","DotKhuyenMai")',
+                success: function (data) {
+                    $('#modalcontent').html(data);
+                    $('#myModal').modal('show');
+                },
+                error: function () {
+                    swal("Error", "Có lỗi khi xem chi tiết", "error");
+                }
+            });
+        };
+
+        function SuaDotKm(MaDotKm, NgayBd, NgayKt) {
+            $.ajax({
+                type: 'GET',
+                data: { MaDotKm: MaDotKm, NgayBd: NgayBd, NgayKt: NgayKt },
+                url: '@Url.Action("ViewSua","DotKhuyenMai")',
+                success: function (data) {
+                    $('#modalcontent').html(data);
+                    $('#myModal').modal('show');
+                }
+            });
+        };
+
+    </script>
+
+}

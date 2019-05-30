@@ -1,0 +1,78 @@
+﻿@model SfStoreOnline.Models.TinTuc
+
+<div>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Xem chi tiết</h4>
+    </div>
+    <div class="modal-body">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.TieuDe)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TieuDe)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.MoTa)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MoTa)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NoiDung)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NoiDung)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ImageName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ImageName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.tag)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.tag)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+
+            <dd>
+                @if (Model.Status == true)
+                {
+                    <p>Sử dụng</p>
+                }
+                else
+                {
+                    <p>Không sử dụng</p>
+                }
+            </dd>
+
+        </dl>
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="@Url.Content("~/Scripts/tinymce/jquery.tinymce.js")" type="text/javascript"></script>
+

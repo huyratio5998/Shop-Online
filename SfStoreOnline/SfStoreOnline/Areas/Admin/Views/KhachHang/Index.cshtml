@@ -1,0 +1,138 @@
+﻿@model IEnumerable<SfStoreOnline.Models.KhachHang>
+
+@{
+    ViewBag.Title = "Danh mục khách hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    SfStoreOnline.Models.PhanQuyen phanquyen = ViewBag.phanquyen;
+}
+@section css
+{
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/Areas/Admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+}
+@if (ViewBag.isadmin)
+{
+    <p>
+        <input type="button" value="Thêm mới" class="btn btn-primary" onclick="ThemMoi('ViewThemMoi','KhachHang')" />
+    </p>
+}
+else if (phanquyen != null && phanquyen.Them)
+{
+    <p>
+        <input type="button" value="Thêm mới" class="btn btn-primary" onclick="ThemMoi('ViewThemMoi','KhachHang')" />
+    </p>
+}
+
+<div class="box">
+    @*<div class="box-header">
+            <h3 class="box-title">Data Table With Full Features</h3>
+        </div>*@
+    <!-- /.box-header -->
+    <div class="box-body">
+        <table id="dynamic-table" class="table table-bordered table-striped dataTable">
+            <thead>
+                <tr role="row">
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 20%;">@Html.DisplayNameFor(model => model.HoTen)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 10%">@Html.DisplayNameFor(model => model.Sdt)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 20%">@Html.DisplayNameFor(model => model.Email)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 20%">@Html.DisplayNameFor(model => model.DiaChi)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 10%">@Html.DisplayNameFor(model => model.Status)</th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="" style="width: 20%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HoTen)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Sdt)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DiaChi)
+                        </td>
+                        <td>
+                            @if (item.Status == true)
+                            {
+                                <span class="label label-success">Sử dụng</span>
+                            }
+                            else
+                            {
+                                <span class="label label-danger">Không sử dụng</span>
+                            }
+
+                        </td>
+                        <td>
+                            <div class="action-buttons">
+                                <a class="blue" href="#" onclick="Xem('ViewChiTiet','KhachHang',@item.Id)">
+                                    <i class="qh-icon fa fa-eye bigger-130"></i>
+                                </a>
+                                @if (ViewBag.isadmin)
+                                {
+                                    <a class="green" href="#" onclick="Sua('ViewSua','KhachHang',@item.Id)">
+                                        <i class="qh-icon fa fa-pencil bigger-130"></i>
+                                    </a>
+                                    <a class="red" href="#" onclick="Xoa('Xoa','KhachHang',@item.Id)">
+                                        <i class="qh-icon fa fa-trash-o bigger-130"></i>
+                                    </a>
+
+                                }
+                                else if (phanquyen != null && phanquyen.Sua)
+                                {
+                                    <a class="green" href="#" onclick="Sua('ViewSua','KhachHang',@item.Id)">
+                                        <i class="qh-icon fa fa-pencil bigger-130"></i>
+                                    </a>
+
+                                }
+                                else if (phanquyen != null && phanquyen.Xoa)
+                                {
+                                    <a class="red" href="#" onclick="Xoa('Xoa','KhachHang',@item.Id)">
+                                        <i class="qh-icon fa fa-trash-o bigger-130"></i>
+                                    </a>
+
+                                }
+                            </div>
+
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    <!-- /.box-body -->
+</div>
+@* dialog form *@
+<div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="modalcontent">
+
+            </div>
+        </div>
+    </div>
+</div>
+@section jsBody
+{
+    <script src="~/Areas/Admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#dynamic-table').DataTable({
+                'paging': true,
+                'lengthChange': true,
+                'searching': true,
+                'ordering': true,
+                'info': true,
+                'autoWidth': false
+            });
+        });
+
+    </script>
+
+}

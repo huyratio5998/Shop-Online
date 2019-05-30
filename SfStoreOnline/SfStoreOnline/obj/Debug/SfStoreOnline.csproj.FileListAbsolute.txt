@@ -1,0 +1,485 @@
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csprojAssemblyReference.cache
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\ApplicationInsights.config
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll.config
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.pdb
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe.config
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.rsp
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe.config
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.rsp
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.AppContext.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Console.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.Process.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Compression.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Pipes.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Claims.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Threading.Thread.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.ValueTuple.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe.config
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.rsp
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.ApplicationInsights.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\WebGrease.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.pdb
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CoreCompileInputs.cache
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CopyComplete
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.pdb
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\EntityFramework.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.dll
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\EntityFramework.xml
+D:\Stanford\A041801DEV-New\Projects\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\ApplicationInsights.config
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll.config
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.pdb
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe.config
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.rsp
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe.config
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.rsp
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.AppContext.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Console.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.Process.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Compression.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Pipes.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Claims.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Threading.Thread.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.ValueTuple.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe.config
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.rsp
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.ApplicationInsights.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\WebGrease.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.pdb
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CoreCompileInputs.cache
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CopyComplete
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.dll
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.pdb
+D:\Stanford\A041801DEV-New\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csprojAssemblyReference.cache
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\ApplicationInsights.config
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll.config
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.pdb
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe.config
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.rsp
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe.config
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.rsp
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.AppContext.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Collections.Immutable.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Console.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.Process.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Compression.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Pipes.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Reflection.Metadata.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.AccessControl.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Claims.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Principal.Windows.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Threading.Thread.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.ValueTuple.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XmlDocument.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe.config
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.rsp
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe.config
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Agent.Intercept.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.ApplicationInsights.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.Web.Infrastructure.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\WebGrease.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.pdb
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csprojResolveAssemblyReference.cache
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CoreCompileInputs.cache
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CopyComplete
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.dll
+G:\Stanford\Courses\ASP_Developer\A041801DEV\Internet\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.pdb
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\ApplicationInsights.config
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll.config
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.pdb
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe.config
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.rsp
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe.config
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.rsp
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.AppContext.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Collections.Immutable.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Console.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.Process.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Compression.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Pipes.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Reflection.Metadata.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.AccessControl.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Claims.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Principal.Windows.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Threading.Thread.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.ValueTuple.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XmlDocument.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe.config
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.rsp
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe.config
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Agent.Intercept.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.ApplicationInsights.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.Web.Infrastructure.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\WebGrease.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.pdb
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csprojResolveAssemblyReference.cache
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CoreCompileInputs.cache
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CopyComplete
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.dll
+E:\ASP\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.pdb
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\ApplicationInsights.config
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll.config
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\SfStoreOnline.pdb
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.exe.config
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csc.rsp
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.exe.config
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\csi.rsp
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.AppContext.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Console.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.Process.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Compression.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.Pipes.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Claims.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Threading.Thread.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.ValueTuple.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.exe.config
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\vbc.rsp
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.ApplicationInsights.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\WebGrease.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\EntityFramework.SqlServer.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Helpers.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Mvc.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Optimization.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.Razor.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Deployment.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Web.WebPages.Razor.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Newtonsoft.Json.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Antlr3.Runtime.pdb
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.DependencyCollector.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.WindowsServer.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.AI.Web.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CoreCompileInputs.cache
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csproj.CopyComplete
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.pdb
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\Learning\Stanford_LAN\HocVien\Project _Nhom_QLBH\SfStoreOnline\SfStoreOnline\obj\Debug\SfStoreOnline.csprojAssemblyReference.cache

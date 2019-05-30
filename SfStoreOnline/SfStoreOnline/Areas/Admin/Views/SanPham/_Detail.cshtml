@@ -1,0 +1,229 @@
+﻿@model SfStoreOnline.Models.SanPham
+
+<div>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Chi tiết loại sản phẩm</h4>
+    </div>
+    <div class="modal-body">
+        <div class="col-md-3">
+            <span class="profile-picture">
+                @if (string.IsNullOrEmpty(@Model.ImageName))
+                {
+                    <img id="avatar" class="editable img-responsive editable-click editable-empty" alt="@Model.UserId0" src="~/Image/Layout/no-image.jpg" style="display: block; width:100%;min-height:100px; ">
+                }
+                else
+                {
+                    <img id="avatar" class="editable img-responsive editable-click editable-empty" alt="@Model.UserId0" src="~/Image/SanPham/@Model.ImageName" style="display: block; width:100%;min-height:100px">
+                }
+
+            </span>
+        </div>
+        <div class="col-md-9">
+            <div class="profile-user-info profile-user-info-striped">
+
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.MaSp) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.MaSp)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.LoaiSanPham.TenLoaiSp) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.LoaiSanPham.TenLoaiSp)</span>
+                    </div>
+                </div>
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.TenSp) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.TenSp)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.MoTa) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.MoTa)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.KichCo.Size) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.KichCo.Size)</span>
+                    </div>
+                </div>
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.SoLuong) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.SoLuong)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.GiaBan) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.GiaBan)</span>
+                    </div>
+                </div>
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.NccId) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.NhaCungCap.HoTen)</span>
+                    </div>
+                </div>
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.ChoPhepBanAm) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.ChoPhepBanAm)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.SpMoi) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.SpMoi)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.SpNoiBat) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.SpNoiBat)</span>
+                    </div>
+                </div>
+
+
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.SpSale) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.SpSale)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.Status) </div>
+
+                    <div class="profile-info-value">
+
+                        @if (Model.Status == true)
+                        {
+                            <span class="editable">
+                                Sử dụng
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="editable">
+                                Không sử dụng
+                            </span>
+                        }
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .profile-user-info-striped {
+        border: 1px solid #DCEBF7;
+    }
+
+    .profile-user-info {
+        display: table;
+        width: 98%;
+        width: calc(100% - 24px);
+        margin: 0 auto;
+    }
+
+    .profile-info-row {
+        display: table-row;
+    }
+
+        .profile-info-row:first-child .profile-info-name, .profile-info-row:first-child .profile-info-value {
+            border-top: none;
+        }
+
+    .profile-user-info-striped .profile-info-name {
+        color: #336199;
+        background-color: #EDF3F4;
+        border-top: 1px solid #F7FBFF;
+    }
+
+    .profile-info-name {
+        text-align: right;
+        padding: 6px 10px 6px 4px;
+        font-weight: 400;
+        color: #667E99;
+        background-color: transparent;
+        width: 150px;
+        vertical-align: middle;
+    }
+
+    .profile-info-name, .profile-info-value {
+        display: table-cell;
+        border-top: 1px dotted #D5E4F1;
+    }
+
+    .profile-info-value {
+        border-top: none;
+    }
+
+    .profile-user-info-striped .profile-info-value {
+        border-top: 1px dotted #DCEBF7;
+        padding-left: 12px;
+    }
+
+    .profile-info-value {
+        padding: 6px 4px 6px 6px;
+    }
+
+    .profile-info-name, .profile-info-value {
+        display: table-cell;
+        border-top: 1px dotted #D5E4F1;
+    }
+
+    .profile-picture {
+        border: 1px solid #CCC;
+        background-color: #FFF;
+        padding: 4px;
+        display: inline-block;
+        max-width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+        min-height: 100px;
+        height: auto;
+        width: 150px;
+    }
+</style>

@@ -1,0 +1,118 @@
+﻿@model SfStoreOnline.Models.login
+
+@{
+    ViewBag.Title = "Đăng nhập hệ thống";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Đăng nhập hệ thống</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" href="~/Image/Layout/logo-stanford.ico" type="image/x-icon" />
+    <!--===============================================================================================-->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Areas/Admin/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Areas/Admin/dist/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+    <link href="~/Areas/Admin/dist/css/login/util.css" rel="stylesheet" />
+    <link href="~/Areas/Admin/dist/css/login/main.css" rel="stylesheet" />
+    <!--===============================================================================================-->
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100" id="myform">
+                <div class="login100-form-title" style="background-image: url(/Image/Layout/bg-01.jpg);">
+                    <span class="login100-form-title-1">
+                        Đăng nhập
+                    </span>
+                </div>
+                @using (Html.BeginForm("Login", "Authentication", FormMethod.Post, new { @class = "login100-form validate-form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(s => s.ReturnURL)
+
+                    if (TempData["ErrorMSG"] != null)
+                    {
+                        <label class="text-danger"> @TempData["ErrorMSG"] </label>
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <br /><br />
+                    }
+                    <div class="wrap-input100 validate-input m-b-18">
+                        <span class="label-input100">Tên đăng nhập</span>
+                        @Html.TextBoxFor(model => model.UserName, new { @placeholder = "Vui lòng nhập tên đăng nhập", @class = "input100" })
+                        <span class="focus-input100"></span>
+                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="wrap-input100 validate-input m-b-18">
+                        <span class="label-input100">Mật khẩu</span>
+                        @Html.PasswordFor(model => model.Password, new { @placeholder = "Vui lòng nhập mật khẩu của bạn", @class = "input100" })
+
+                        <span class="focus-input100"></span>
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="flex-sb-m w-full p-b-18">
+                        <div class="contact100-form-checkbox">
+
+                            @*@Html.CheckBoxFor(model => model.isRemember)
+                    <label for="@Html.NameFor(model => model.isRemember)">&nbsp;Ghi nhớ đăng nhập</label>*@
+
+                            @*@Html.EditorFor(model => model.isRemember, new { @class = "input-checkbox100", @checked = "checked" })*@
+                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me" value="@Model.isRemember">
+
+                            <label class="label-checkbox100" for="ckb1">
+                                Ghi nhớ đăng nhập
+                            </label>
+                        </div>
+                    </div>
+                    @Html.HiddenFor(model => model.isRemember)
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Đăng nhập
+                        </button>
+                    </div>
+
+                }
+
+            </div>
+        </div>
+    </div>
+
+    <!--===============================================================================================-->
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/Areas/Admin/dist/js/login/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#ckb1').on('change', function () {
+                console.log(this);
+
+                if ($(this).is(':checked')) {
+                    console.log('a');
+                    //$(this).attr('value', 'true');
+                    $('#isRemember').attr('value', 'true');
+                } else {
+                    //$(this).attr('value', 'false');
+                    $('#isRemember').attr('value', 'false');
+                }
+                //console.log(this);
+            });
+            $('#myform').slideDown(10000);
+        });
+    </script>
+
+</body>
+</html>

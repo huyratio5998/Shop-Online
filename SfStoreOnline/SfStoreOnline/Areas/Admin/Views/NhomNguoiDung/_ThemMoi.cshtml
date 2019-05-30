@@ -1,0 +1,170 @@
+﻿@model SfStoreOnline.Models.NhomNguoiDung
+@{ 
+    IEnumerable<SfStoreOnline.Models.PhanQuyen> lstPhanQuyen = ViewBag.lstPhanQuyen;
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Thêm mới nhóm người dùng</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.TenNhom, htmlAttributes: new { @class = "control-label col-md-4 label-required" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.TenNhom, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenNhom, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    @Html.CheckBoxFor(model => model.Status)<label for="@Html.NameFor(model => model.Status)">&nbsp;Sử dụng</label>
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="box box-info">
+                <div class="box-header ui-sortable-handle" style="cursor: move;">
+                    <i class="fa fa-users"></i>
+
+                    <h3 class="box-title">Phân quyền</h3>
+                </div>
+                <div class="box-body">
+                    <table class="table-responsive table-bordered" width="100%" id="tblPhanQuyen">
+                        <thead>
+                            <tr>
+                                <th>Tên menu</th>
+                                <th align="center">Xem</th>
+                                <th align="center">Thêm</th>
+                                <th align="center">Sửa</th>
+                                <th align="center">Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var phanquyen in lstPhanQuyen)
+                            {
+                            <tr>
+                               
+                                <td width="60%">
+                                    @Html.HiddenFor(modelItem => phanquyen.MenuId)
+                                    @if (phanquyen.MenuAdmin.Cap == 1)
+                                    {
+                                        <i class="fa fa-fw fa-list-ul"></i>
+                                        @Html.DisplayFor(modelItem => phanquyen.MenuAdmin.TenMenu)
+                                    }
+                                    else
+                                    {
+                                        <i class="fa fa-fw fa-genderless"></i>
+                                        @Html.DisplayFor(modelItem => phanquyen.MenuAdmin.TenMenu)
+                                    }
+                                </td>
+                               
+                                
+                                <td width="10%" align="center">@Html.CheckBoxFor(modelItem => phanquyen.Xem)</td>
+                                <td width="10%" align="center">@Html.CheckBoxFor(modelItem => phanquyen.Them)</td>
+                                <td width="10%" align="center">@Html.CheckBoxFor(modelItem => phanquyen.Sua)</td>
+                                <td width="10%" align="center">@Html.CheckBoxFor(modelItem => phanquyen.Xoa)</td>
+                            </tr>
+                            }
+
+                        </tbody>
+                    </table>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <input type="submit" id="approve-btn" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+     $(document).ready(function () {
+        
+         $('form').submit(function () {
+             var serializedForm = new FormData($('form')[0]);
+             console.log(serializedForm);
+             $.ajax({
+                 url: '@Url.Action("SaveThemMoi", "NhomNguoiDung")',
+                 type: "POST",
+                 enctype: 'multipart/form-data',
+                 contentType: false,
+                 processData: false,
+                 cache: false,
+                 data: serializedForm,
+                 success: function (result) {
+                     var data = JSON.stringify(getAllData(result.Id));
+                     console.log('-----------');
+                     console.log(data);
+                     $.ajax({
+                         url: '@Url.Action("SavePhanQuyen", "NhomNguoiDung")',
+                         type: "POST",
+                         enctype: 'multipart/form-data',
+                         dataType: 'json',
+                         contentType: 'application/json; charset=utf-8',
+                         data: JSON.stringify({ 'getepassdata': data }),
+                         success: function (results) {
+
+                             $("#dynamic-table").load(window.location + " #dynamic-table");
+
+                             $('#myModal').modal('hide');
+
+                             swal("Thành công", "Thêm mới thành công!", "success");
+                         }
+                     });
+                   
+
+                }
+
+            });
+            return false;
+         });
+         $.validator.unobtrusive.parse("form");
+
+         function getAllData(result) {
+             var data = [];
+             $('#tblPhanQuyen tbody tr').each(function () {
+                 var NhomId = result;
+                 var MenuId = $(this).find('#phanquyen_MenuId').val();
+                 var Xem = $(this).find('#phanquyen_Xem').val();
+                 var Them = $(this).find('#phanquyen_Them').val();
+                 var Sua = $(this).find('#phanquyen_Sua').val();
+                 var Xoa = $(this).find('#phanquyen_Xoa').val();
+                 
+                 var alldata = {
+                     'NhomId': NhomId,
+                     'MenuId': MenuId,
+                     'Xem': Xem,
+                     'Them': Them,
+                     'Sua': Sua,
+                     'Xoa': Xoa,
+                   
+                 }
+                 data.push(alldata);
+             });
+             console.log(data);
+             return data;
+         };
+         $('#tblPhanQuyen tr input[type="checkbox"]').on('change', function () {
+             if ($(this).is(':checked')) {
+                 $(this).attr('value', 'true');
+             } else {
+                 $(this).attr('value', 'false');
+             }
+         });
+        
+    });
+
+</script>

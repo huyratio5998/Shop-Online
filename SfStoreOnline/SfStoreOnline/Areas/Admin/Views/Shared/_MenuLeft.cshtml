@@ -1,0 +1,108 @@
+﻿@model IEnumerable<SfStoreOnline.Models.MenuAdmin>
+@{
+    var lstMenuMe = Model.Where(t => t.Cap == 1).OrderBy(t => t.Stt);
+    SfStoreOnline.Models.User user = (SfStoreOnline.Models.User)Session[SfStoreOnline.Models.CommonConstants.USER_SESSION];
+    SfStoreOnline.Models.PhanQuyen phanquyen = null;
+}
+
+<ul class="sidebar-menu" id="Mainmenu" data-widget="tree">
+    <li class="header">MAIN NAVIGATION</li>
+    @foreach (var item in lstMenuMe)
+    {
+
+        var lstMenuCon = Model.Where(t => t.Cap > 1 && t.MenuIdCha == item.MenuId).OrderBy(t => t.Stt);
+        phanquyen = user.NhomNguoiDung.PhanQuyens.Where(t => t.MenuId == item.MenuId).SingleOrDefault();
+        if (phanquyen == null)
+        {
+            continue;
+        }
+
+
+        if (!user.IsAdmin)
+        {
+            if (phanquyen.Xem)
+            {
+                if (lstMenuCon.Count() > 0)
+                {
+                    <li class="treeview">
+                        <!-- menu-open -->
+                        <a href="#">
+                            <i class="fa @item.AswIcon"></i> <span>@item.TenMenu</span>
+
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+
+                        <ul class="treeview-menu">
+                            @foreach (var itemcon in lstMenuCon)
+                            {
+                                phanquyen = user.NhomNguoiDung.PhanQuyens.Where(t => t.MenuId == itemcon.MenuId).SingleOrDefault();
+                                if (phanquyen == null)
+                                { continue; }
+                                if (phanquyen.Xem)
+                                {
+                                    <li><a href="@Url.Action(itemcon.Action,itemcon.Controller)"><i class="fa @itemcon.AswIcon"></i> @itemcon.TenMenu</a></li>
+                                }
+                            }
+                        </ul>
+
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <!-- menu-open -->
+                        <a href="@Url.Action(item.Action,item.Controller)">
+                            <i class="fa @item.AswIcon"></i> <span>@item.TenMenu</span>
+                        </a>
+                    </li>
+                }
+            }
+
+        }
+        else
+        {
+            if (lstMenuCon.Count() > 0)
+            {
+                <li class="treeview">
+                    <!-- menu-open -->
+                    <a href="#">
+                        <i class="fa @item.AswIcon"></i> <span>@item.TenMenu</span>
+
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+
+                    <ul class="treeview-menu">
+                        @foreach (var itemcon in lstMenuCon)
+                        {
+                            <li><a href="@Url.Action(itemcon.Action,itemcon.Controller)"><i class="fa @itemcon.AswIcon"></i> @itemcon.TenMenu</a></li>
+                        }
+                    </ul>
+
+                </li>
+            }
+            else
+            {
+                <li>
+                    <!-- menu-open -->
+                    <a href="@Url.Action(item.Action,item.Controller)">
+                        <i class="fa @item.AswIcon"></i> <span>@item.TenMenu</span>
+                    </a>
+
+                    <ul class="treeview-menu">
+                        @foreach (var itemcon in lstMenuCon)
+                        {
+                            <li><a href="@Url.Action(itemcon.Action,itemcon.Controller)"><i class="fa @itemcon.AswIcon"></i> @itemcon.TenMenu</a></li>
+                        }
+                    </ul>
+
+                </li>
+            }
+        }
+
+
+    }
+</ul>

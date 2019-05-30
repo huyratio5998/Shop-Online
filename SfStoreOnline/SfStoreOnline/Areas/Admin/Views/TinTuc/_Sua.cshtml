@@ -1,0 +1,136 @@
+﻿@model SfStoreOnline.Models.TinTuc
+
+@using (Html.BeginForm("AddNew", "TinTuc"))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.Id)
+    @Html.HiddenFor(model => model.Date0)
+    @Html.HiddenFor(model => model.Time0)
+    @Html.HiddenFor(model => model.UserId0)
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Sửa tin tức</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-horizontal">
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.TieuDe, htmlAttributes: new { @class = "control-label col-md-2 label-required" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.TieuDe, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TieuDe, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.MoTa, htmlAttributes: new { @class = "control-label col-md-2 label-required" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.MoTa, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.MoTa, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.NoiDung, htmlAttributes: new { @class = "control-label col-md-2 label-required" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.NoiDung, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.NoiDung, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ImageName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-6">
+
+                    <span class="profile-picture col-md-8">
+                        @if (Model == null || string.IsNullOrEmpty(Model.ImageName))
+                        {
+                            <img id="avatar" class="editable img-responsive editable-click editable-empty" style="width:100%;height:100%;" src="~/Image/Layout/no-image.jpg" />
+                        }
+                        else
+                        {
+                            <img id="avatar" class="editable img-responsive editable-click editable-empty" style="width:100%;height:100%;" src="~/Image/TinTuc/@Model.ImageName" />
+                        }
+                    </span>
+                    <div class="col-md-4">@Html.TextBoxFor(model => model.ImageName, new { type = "file", id = "avatarpath", accept = ".jpg, .jpeg, .gif, .png", onchange = "ShowPreview(this)" })</div>
+                    @Html.ValidationMessageFor(model => model.ImageName, "", new { @class = "text-danger " })
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.tag, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-6">
+                    @Html.EditorFor(model => model.tag, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.tag, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                    @Html.CheckBoxFor(model => model.Status)
+                    <label for="@Html.NameFor(model => model.Status)">Sử dụng</label>
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <input type="submit" id="approve-btn" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+<script type="text/javascript">
+     $(document).ready(function () {
+
+        $('form').submit(function () {
+            var serializedForm = new FormData($('form')[0])
+            $.ajax({
+                url: '@Url.Action("SaveSua", "TinTuc")',
+                type: "POST",
+                data: serializedForm,
+                enctype: 'multipart/form-data',
+                contentType: false,
+                processData: false,
+                cache: false,
+                success: function (result) {
+                    $("#dynamic-table").load(window.location + " #dynamic-table");
+                    $('#myModal').modal('hide');
+                    swal("Thành công", "Lưu thành công!", "success");
+                }
+
+            });
+            return false;
+         });
+         $.validator.unobtrusive.parse("form");
+    });
+
+</script>
+<script>
+
+    $('#avatarpath').filestyle({
+
+        iconName: 'glyphicon glyphicon-file',
+
+        buttonText: '',
+
+        buttonName: 'btn-primary'
+
+    });
+    function ShowPreview(input) {
+        if (input.files && input.files[0]) {
+            var ImageDir = new FileReader();
+            ImageDir.onload = function (e) {
+                $('#avatar').attr('src', e.target.result);
+            }
+            ImageDir.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+

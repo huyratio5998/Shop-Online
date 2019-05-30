@@ -1,0 +1,129 @@
+﻿@model SfStoreOnline.Models.LoaiSanPham
+
+@*@using (Html.BeginForm("_ThemMoi", "LoaiSanPham", FormMethod.Post, new { encType = "multipart/form-data" }))*@
+@using (Html.BeginForm("AddNew", "LoaiSanPham"))
+{
+    @Html.AntiForgeryToken()
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Thêm mới loại sản phẩm</h4>
+    </div>
+    <div class="modal-body">
+        <div class="form-horizontal">
+
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.ImagName, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+
+                    <span class="profile-picture">
+                        @if (Model == null || string.IsNullOrEmpty(Model.ImagName))
+                        {
+                            <img id="avatar" class="editable img-responsive editable-click editable-empty" style="width:100%;height:100%;" src="~/Image/Layout/no-image.jpg" />
+                        }
+                        else
+                        {
+                            <img id="avatar" class="editable img-responsive editable-click editable-empty" style="width:100%;height:100%;" src="~/Image/LoaiSp/@Model.ImagName" />
+                        }
+                    </span>
+                    @*<input type="file" name="fUpload" />*@
+                    @Html.ValidationMessageFor(model => model.ImagName, "", new { @class = "text-danger " })
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-6">@Html.TextBoxFor(model => model.ImagName, new { type = "file", id = "avatarpath", name = "fUpload", accept = ".jpg, .jpeg, .gif, .png", onchange = "ShowPreview(this)" })</div>
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.TenLoaiSp, htmlAttributes: new { @class = "control-label col-md-2 label-required" })
+                <div class="col-md-10"> 
+                    @Html.EditorFor(model => model.TenLoaiSp, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.TenLoaiSp, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                <div class="col-md-10">
+                    @Html.CheckBoxFor(model => model.Status)
+                    <label for="@Html.NameFor(model => model.Status)">Sử dụng</label>
+                    @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <input type="submit" id="approve-btn" value="Save" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+}
+
+<script type="text/javascript">
+
+     $(document).ready(function () {
+         $('#avatarpath').filestyle({
+
+             iconName: 'glyphicon glyphicon-file',
+
+             buttonText: 'Select File',
+
+             buttonName: 'btn-primary'
+
+         });
+        $('form').submit(function () {
+            var serializedForm = new FormData($('form')[0])
+            //var serializedForm = $(this).serialize();
+            $.ajax({
+                url: '@Url.Action("SaveThemMoi", "LoaiSanPham")',
+                type: "POST",
+                 contentType: false,
+                processData: false,
+                cache: false,
+                data: serializedForm,
+                success: function (result) {
+                    $("#dynamic-table").load(window.location + " #dynamic-table");
+
+                    $('#myModal').modal('hide');
+                    swal("Thành công", "Thêm mới thành công!", "success");
+
+                }
+
+            });
+            return false;
+         });
+         $.validator.unobtrusive.parse("form");
+         
+    });
+
+    function ShowPreview(input) {
+        if (input.files && input.files[0]) {
+            var ImageDir = new FileReader();
+            ImageDir.onload = function (e) {
+                $('#avatar').attr('src', e.target.result);
+            }
+            ImageDir.readAsDataURL(input.files[0]);
+        }
+    }   
+</script>
+<style>
+    .profile-picture {
+        border: 1px solid #CCC;
+        background-color: #FFF;
+        padding: 4px;
+        display: inline-block;
+        max-width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+        height: 100px;
+        width: 100px;
+    }
+</style>

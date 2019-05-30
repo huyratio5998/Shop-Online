@@ -1,0 +1,193 @@
+﻿@model IEnumerable<SfStoreOnline.Models.LienHe>
+
+@{
+    ViewBag.Title = "Liên hệ và phản hồi";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+@section css
+{
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/Areas/Admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+}
+<div class="box">
+    <!-- /.box-header -->
+    <div class="box-body">
+        <table id="dynamic-table" class="table table-bordered table-striped dataTable">
+            <thead>
+                <tr role="row">
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="">
+                        @Html.DisplayNameFor(model => model.HoTen)
+                    </th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="">
+                        @Html.DisplayNameFor(model => model.DiaChi)
+                    </th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="">
+                        @Html.DisplayNameFor(model => model.Sdt)
+                    </th>
+
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="">
+                        @Html.DisplayNameFor(model => model.NoiDung)
+                    </th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="">
+                        @Html.DisplayNameFor(model => model.NgayTao)
+                    </th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label="">
+                        @Html.DisplayNameFor(model => model.Da_phan_hoi_yn)
+                    </th>
+                    <th class="sorting" tabindex="0" aria-controls="dynamic-table" rowspan="1" colspan="1" aria-label=""></th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.HoTen)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DiaChi)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Sdt)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NoiDung)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NgayTao)
+                        </td>
+                        <td>
+                            @if (item.Da_phan_hoi_yn == true)
+                            {
+                                <span id="trangthai" onclick="Doitt(@item.Id)"><a class="label label-success" href="#">Đã phản hồi</a></span>
+                            }
+                            else
+                            {
+                                <span id="trangthai" onclick="Doitt(@item.Id)"><a class="label label-danger" href="#">Chưa phản hồi</a></span>
+                            }
+
+                        </td>
+                        <td>
+                            <div class="action-buttons">
+
+                                <a class="blue" href="#" onclick="Xem(@item.Id)">
+                                    <i class="qh-icon fa fa-eye bigger-130"></i>
+                                </a>
+
+                                <a class="red" href="#" onclick="Xoa(@item.Id)">
+                                    <i class="qh-icon fa fa-trash-o bigger-130"></i>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" id="modalcontent">
+
+            </div>
+        </div>
+    </div>
+</div>
+@section jsBody
+{
+    <script src="~/Areas/Admin/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $('#dynamic-table').DataTable({
+                'paging': true,
+                'lengthChange': true,
+                'searching': true,
+                'ordering': true,
+                'info': true,
+                'autoWidth': false
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function Xoa(Id) {
+            swal({
+                title: "Bạn có chắc chắn muốn xóa không?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonClass: "btn-danger",
+                confirmButtonText: "OK",
+                cancelButtonText: "Cancel",
+                closeOnConfirm: false,
+                closeOnCancel: true
+            },
+                function (isConfirm) {
+                    if (isConfirm) {
+                        funcXoa(Id);
+                    }
+                });
+        };
+         function funcXoa(Id) {
+              $.ajax({
+                        type: "POST",
+                        url: '@Url.Action("Xoa","LienHe")',
+                        data: { id: Id },
+                        ajaxasync: true,
+                        success: function () {
+                            $("#dynamic-table").load(window.location + " #dynamic-table");//Xóa thành công thì load lại dữ liệu bảng
+                            swal("Thành công", "Đã xóa thành công!", "success");
+
+                      },
+                      error: function () {
+                          swal("Error", "Có lỗi trong quá trình xóa", "error");
+                      }
+                });
+        };
+        //---------------Xem chi tiết
+        function Xem(Id) {
+            $.ajax({
+                type: 'GET',
+                data: { id: Id },
+                url: '@Url.Action("ViewChiTiet","LienHe")',
+                success: function (data) {
+                    $('#modalcontent').html(data);
+                    $('#myModal').modal('show');
+                },
+                error: function () {
+                    swal("Error", "Có lỗi khi xem chi tiết", "error");
+                }
+            });
+        };
+        //---------------Đổi trạng thái
+        function Doitt(Id) {
+            $.ajax({
+
+                type: 'POST',
+                data: { id: Id },
+                url: '@Url.Action("Doitt","LienHe")',
+                success: function (result) {
+                    if (result.success) {
+                        console.log('thanh cong')
+                        if (result.TrangThai) {
+                            $("#dynamic-table").load(window.location + " #dynamic-table")
+                            swal("Thành công", "Đã chuyển trạng thái là phản hồi!", "success");
+                        }
+                        else {
+                            $("#dynamic-table").load(window.location + " #dynamic-table")
+                            swal("Thành công", "Đã chuyển trạng thái là chưa phản hồi!", "success");
+                        }
+                    }
+                },
+                error: function () {
+                    swal("Error", "Có lỗi. Bạn không thể chuyển trạng thái", "error");
+                }
+            });
+        };
+
+    </script>
+
+}

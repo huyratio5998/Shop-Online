@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8e8b1022749644f1892d9f1f25d20bb0" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.ChietKhau" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.DonHangBan" Width="1.5" PointX="6" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.DonHangBanCt" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.DotKm" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.DotKmCt" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.GioHang" Width="1.5" PointX="11.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.KhachHang" Width="1.5" PointX="3.75" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.KichCo" Width="1.5" PointX="3.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.LoaiSanPham" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.MenuAdmin" Width="1.5" PointX="6.5" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.NhaCungCap" Width="1.5" PointX="3.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.NhapKho" Width="1.5" PointX="6" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.NhapKhoCt" Width="1.5" PointX="8.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.NhomNguoiDung" Width="1.5" PointX="1.5" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.PhanQuyen" Width="1.5" PointX="8.75" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.SanPham" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.sysdiagram" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.ThietLapChung" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.TinTuc" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.User" Width="1.5" PointX="3.75" PointY="16.375" IsExpanded="true" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_DotKmCt_ChietKhau" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_DonHangBan_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_DonHangBanCt_DonHangBan" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_DonHangBanCt_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_DotKmCt_DotKm" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_DotKmCt_LoaiSanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_GioHang_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_GioHang_User" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_SanPham_KichCo" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_SanPham_LoaiSanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_PhanQuyen_MenuAdmin" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_NhapKho_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_SanPham_NhaCungCap" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_NhapKho_User" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_NhapKhoCt_NhapKho" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_NhapKhoCt_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_PhanQuyen_NhomNguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_User_NhomNguoiDung" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SFOnlineStore_A0418Model.LienHe" Width="1.5" PointX="13.375" PointY="0.75" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_User_TinTuc" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_TinTuc_User" />
+        <AssociationConnector Association="SFOnlineStore_A0418Model.FK_NhapKhoCt_ChietKhau" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,98 @@
+﻿@model SfStoreOnline.Models.LienHe
+
+<div>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Chi tiết liên hệ & phản hồi</h4>
+    </div>
+    <div class="modal-body">
+        <div class="col-md-12">
+            <div class="profile-user-info profile-user-info-striped">
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.HoTen) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.HoTen)</span>
+                    </div>
+                </div>
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.DiaChi) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.DiaChi)</span>
+                    </div>
+                </div>
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.Sdt) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.Sdt)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.Email) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.Email)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.NoiDung) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.NoiDung)</span>
+                    </div>
+                </div>
+
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.NgayTao) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.NgayTao)</span>
+                    </div>
+                </div>
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.GioTao) </div>
+
+                    <div class="profile-info-value">
+                        <span class="editable">@Html.DisplayFor(model => model.GioTao)</span>
+                    </div>
+                </div>
+                <div class="profile-info-row">
+                    <div class="profile-info-name"> @Html.DisplayNameFor(model => model.Da_phan_hoi_yn) </div>
+
+                    <div class="profile-info-value">
+
+                        @if (Model.Da_phan_hoi_yn == true)
+                        {
+                            <span class="editable">
+                                Đã phản hồi
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="editable">
+                                Chưa phản hồi
+                            </span>
+
+                        }
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

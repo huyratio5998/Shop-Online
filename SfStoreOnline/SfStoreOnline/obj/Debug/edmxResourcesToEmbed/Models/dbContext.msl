@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SFOnlineStore_A0418ModelStoreContainer" CdmEntityContainer="SFOnlinestore_A0418Entities">
+    <EntitySetMapping Name="ChietKhaus">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.ChietKhau">
+        <MappingFragment StoreEntitySet="ChietKhau">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TenCK" ColumnName="TenCK" />
+          <ScalarProperty Name="PtCk" ColumnName="PtCk" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="time2" ColumnName="time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonHangBans">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.DonHangBan">
+        <MappingFragment StoreEntitySet="DonHangBan">
+          <ScalarProperty Name="giohang_yn" ColumnName="giohang_yn" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SoDh" ColumnName="SoDh" />
+          <ScalarProperty Name="KhId" ColumnName="KhId" />
+          <ScalarProperty Name="NgayBan" ColumnName="NgayBan" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Tinh" ColumnName="Tinh" />
+          <ScalarProperty Name="Huyen" ColumnName="Huyen" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="TongSL" ColumnName="TongSL" />
+          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="TongCk" ColumnName="TongCk" />
+          <ScalarProperty Name="PhiVc" ColumnName="PhiVc" />
+          <ScalarProperty Name="TongTt" ColumnName="TongTt" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonHangBanCts">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.DonHangBanCt">
+        <MappingFragment StoreEntitySet="DonHangBanCt">
+          <ScalarProperty Name="DonHangId" ColumnName="DonHangId" />
+          <ScalarProperty Name="SanPhamId" ColumnName="SanPhamId" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+          <ScalarProperty Name="ChietKhauId" ColumnName="ChietKhauId" />
+          <ScalarProperty Name="Tien" ColumnName="Tien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DotKms">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.DotKm">
+        <MappingFragment StoreEntitySet="DotKm">
+          <ScalarProperty Name="MaDotKm" ColumnName="MaDotKm" />
+          <ScalarProperty Name="TenDotKm" ColumnName="TenDotKm" />
+          <ScalarProperty Name="NgayBd" ColumnName="NgayBd" />
+          <ScalarProperty Name="NgayKt" ColumnName="NgayKt" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="time2" ColumnName="time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DotKmCts">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.DotKmCt">
+        <MappingFragment StoreEntitySet="DotKmCt">
+          <ScalarProperty Name="MaDotkm" ColumnName="MaDotkm" />
+          <ScalarProperty Name="NgayBd" ColumnName="NgayBd" />
+          <ScalarProperty Name="NgayKt" ColumnName="NgayKt" />
+          <ScalarProperty Name="ChietKhauId" ColumnName="ChietKhauId" />
+          <ScalarProperty Name="LoaiSpId" ColumnName="LoaiSpId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GioHangs">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.GioHang">
+        <MappingFragment StoreEntitySet="GioHang">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SanPhamId" ColumnName="SanPhamId" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KhachHangs">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.KhachHang">
+        <MappingFragment StoreEntitySet="KhachHang">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KichCoes">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.KichCo">
+        <MappingFragment StoreEntitySet="KichCo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoaiSanPhams">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.LoaiSanPham">
+        <MappingFragment StoreEntitySet="LoaiSanPham">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TenLoaiSp" ColumnName="TenLoaiSp" />
+          <ScalarProperty Name="ImagName" ColumnName="ImagName" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MenuAdmins">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.MenuAdmin">
+        <MappingFragment StoreEntitySet="MenuAdmin">
+          <ScalarProperty Name="Cap" ColumnName="Cap" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="MenuIdCha" ColumnName="MenuIdCha" />
+          <ScalarProperty Name="TenMenu" ColumnName="TenMenu" />
+          <ScalarProperty Name="AswIcon" ColumnName="AswIcon" />
+          <ScalarProperty Name="AnMenu" ColumnName="AnMenu" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Controller" ColumnName="Controller" />
+          <ScalarProperty Name="Stt" ColumnName="Stt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhaCungCaps">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.NhaCungCap">
+        <MappingFragment StoreEntitySet="NhaCungCap">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="NguoiLienHe" ColumnName="NguoiLienHe" />
+          <ScalarProperty Name="SdtNguoiLienHe" ColumnName="SdtNguoiLienHe" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhapKhoes">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.NhapKho">
+        <MappingFragment StoreEntitySet="NhapKho">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SoPhieuNhap" ColumnName="SoPhieuNhap" />
+          <ScalarProperty Name="NhaCungCapId" ColumnName="NhaCungCapId" />
+          <ScalarProperty Name="NgayNhap" ColumnName="NgayNhap" />
+          <ScalarProperty Name="NguoiNhapId" ColumnName="NguoiNhapId" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="TongSL" ColumnName="TongSL" />
+          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="TongCk" ColumnName="TongCk" />
+          <ScalarProperty Name="PhiVc" ColumnName="PhiVc" />
+          <ScalarProperty Name="TongTt" ColumnName="TongTt" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+          <ScalarProperty Name="TraLai_Yn" ColumnName="TraLai_Yn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhapKhoCts">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.NhapKhoCt">
+        <MappingFragment StoreEntitySet="NhapKhoCt">
+          <ScalarProperty Name="PhieuNhapId" ColumnName="PhieuNhapId" />
+          <ScalarProperty Name="SanPhamId" ColumnName="SanPhamId" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+          <ScalarProperty Name="ChietKhauId" ColumnName="ChietKhauId" />
+          <ScalarProperty Name="Tien" ColumnName="Tien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NhomNguoiDungs">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.NhomNguoiDung">
+        <MappingFragment StoreEntitySet="NhomNguoiDung">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhanQuyens">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.PhanQuyen">
+        <MappingFragment StoreEntitySet="PhanQuyen">
+          <ScalarProperty Name="NhomId" ColumnName="NhomId" />
+          <ScalarProperty Name="MenuId" ColumnName="MenuId" />
+          <ScalarProperty Name="Xem" ColumnName="Xem" />
+          <ScalarProperty Name="Them" ColumnName="Them" />
+          <ScalarProperty Name="Sua" ColumnName="Sua" />
+          <ScalarProperty Name="Xoa" ColumnName="Xoa" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SanPhams">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.SanPham">
+        <MappingFragment StoreEntitySet="SanPham">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MaSp" ColumnName="MaSp" />
+          <ScalarProperty Name="TenSp" ColumnName="TenSp" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="ChiTiet" ColumnName="ChiTiet" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="GiaVon" ColumnName="GiaVon" />
+          <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+          <ScalarProperty Name="LoaiSpId" ColumnName="LoaiSpId" />
+          <ScalarProperty Name="NccId" ColumnName="NccId" />
+          <ScalarProperty Name="ChoPhepBanAm" ColumnName="ChoPhepBanAm" />
+          <ScalarProperty Name="SpMoi" ColumnName="SpMoi" />
+          <ScalarProperty Name="SpNoiBat" ColumnName="SpNoiBat" />
+          <ScalarProperty Name="SpSale" ColumnName="SpSale" />
+          <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThietLapChungs">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.ThietLapChung">
+        <MappingFragment StoreEntitySet="ThietLapChung">
+          <ScalarProperty Name="LoaiSpId6" ColumnName="LoaiSpId6" />
+          <ScalarProperty Name="LoaiSpId5" ColumnName="LoaiSpId5" />
+          <ScalarProperty Name="LoaiSpId4" ColumnName="LoaiSpId4" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="TenCuaHang" ColumnName="TenCuaHang" />
+          <ScalarProperty Name="TenVietTat" ColumnName="TenVietTat" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="GioiThieu" ColumnName="GioiThieu" />
+          <ScalarProperty Name="SliderAnh1" ColumnName="SliderAnh1" />
+          <ScalarProperty Name="SliderTieuDe1" ColumnName="SliderTieuDe1" />
+          <ScalarProperty Name="SliderMoTa1" ColumnName="SliderMoTa1" />
+          <ScalarProperty Name="SliderLink1" ColumnName="SliderLink1" />
+          <ScalarProperty Name="SliderAnh2" ColumnName="SliderAnh2" />
+          <ScalarProperty Name="SliderTieuDe2" ColumnName="SliderTieuDe2" />
+          <ScalarProperty Name="SliderMoTa2" ColumnName="SliderMoTa2" />
+          <ScalarProperty Name="SliderLink2" ColumnName="SliderLink2" />
+          <ScalarProperty Name="SliderAnh3" ColumnName="SliderAnh3" />
+          <ScalarProperty Name="SliderTieuDe3" ColumnName="SliderTieuDe3" />
+          <ScalarProperty Name="SliderMoTa3" ColumnName="SliderMoTa3" />
+          <ScalarProperty Name="SliderLink3" ColumnName="SliderLink3" />
+          <ScalarProperty Name="LoaiSpId1" ColumnName="LoaiSpId1" />
+          <ScalarProperty Name="LoaiSpId2" ColumnName="LoaiSpId2" />
+          <ScalarProperty Name="LoaiSpId3" ColumnName="LoaiSpId3" />
+          <ScalarProperty Name="TieuDeKm" ColumnName="TieuDeKm" />
+          <ScalarProperty Name="MoTaKm" ColumnName="MoTaKm" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinTucs">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.TinTuc">
+        <MappingFragment StoreEntitySet="TinTuc">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="tag" ColumnName="tag" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="TruyCapQuanTri" ColumnName="TruyCapQuanTri" />
+          <ScalarProperty Name="AvatarName" ColumnName="AvatarName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="NhomId" ColumnName="NhomId" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="DanhSachSanPham" FunctionName="SFOnlineStore_A0418Model.Store.DanhSachSanPham">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SFOnlineStore_A0418Model.DanhSachSanPham_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MaSp" ColumnName="MaSp" />
+          <ScalarProperty Name="TenSp" ColumnName="TenSp" />
+          <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="ChiTiet" ColumnName="ChiTiet" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="GiaVon" ColumnName="GiaVon" />
+          <ScalarProperty Name="GiaBan" ColumnName="GiaBan" />
+          <ScalarProperty Name="LoaiSpId" ColumnName="LoaiSpId" />
+          <ScalarProperty Name="NccId" ColumnName="NccId" />
+          <ScalarProperty Name="ChoPhepBanAm" ColumnName="ChoPhepBanAm" />
+          <ScalarProperty Name="SpMoi" ColumnName="SpMoi" />
+          <ScalarProperty Name="SpNoiBat" ColumnName="SpNoiBat" />
+          <ScalarProperty Name="SpSale" ColumnName="SpSale" />
+          <ScalarProperty Name="SizeId" ColumnName="SizeId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Date0" ColumnName="Date0" />
+          <ScalarProperty Name="Time0" ColumnName="Time0" />
+          <ScalarProperty Name="UserId0" ColumnName="UserId0" />
+          <ScalarProperty Name="Date2" ColumnName="Date2" />
+          <ScalarProperty Name="Time2" ColumnName="Time2" />
+          <ScalarProperty Name="UserId2" ColumnName="UserId2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="SFOnlineStore_A0418Model.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="SFOnlineStore_A0418Model.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="SFOnlineStore_A0418Model.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="SFOnlineStore_A0418Model.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SFOnlineStore_A0418Model.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="SFOnlineStore_A0418Model.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SFOnlineStore_A0418Model.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="SFOnlineStore_A0418Model.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="SFOnlineStore_A0418Model.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="LienHes">
+      <EntityTypeMapping TypeName="SFOnlineStore_A0418Model.LienHe">
+        <MappingFragment StoreEntitySet="LienHe">
+          <ScalarProperty Name="GioTao" ColumnName="GioTao" />
+          <ScalarProperty Name="Da_phan_hoi_yn" ColumnName="Da_phan_hoi_yn" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Sdt" ColumnName="Sdt" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="HoTen" ColumnName="HoTen" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
